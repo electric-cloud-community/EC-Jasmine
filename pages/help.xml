@@ -1,0 +1,76 @@
+  <helpDefinition>
+  <title>Splint Help</title>
+  <componentContainer>
+    <LINK REL="StyleSheet" HREF="../../plugins/EC-Splint/pluginhelp.css" TYPE="text/css" MEDIA="screen"/>
+    <div class="help" >
+      <h1 class="help">Splint</h1>
+      <h2 class="help">Overview</h2>
+      <p class="help">
+Splint is a tool that does static analysis on C programs for security 
+vulnerabilities and coding mistakes. With minimal effort, Splint can be 
+used as a better lint. If additional effort is invested adding annotations 
+to programs, Splint can perform stronger checking than can be done by any 
+standard lint. Initially, it is only available for Linux, but an older version 
+was developed specifically for Windows.</p>
+
+
+      <h2 class="help">Configuration</h2>
+    
+    <p class="help">You do not need to configure the plugin before using it.</p>
+
+     <h2 class="help">Using the Plugin</h2>
+
+      <p class="help">
+      When creating a procedure, in the Steps tab, click the <B>Add Step</B> button and select 
+      <b>splint</b> from the <b>Code Analysis Tools</b> category. Complete the following parameters: 
+      <ul>
+          
+        <li>Splint installation path - Path to the splint installation path, 
+        default value is splint, if Windows version is used, you should point to the 
+        absolute path of splint.exe</li>
+        
+        <li>Target to analyze - Path of the target to analyze. 
+        It can be a file or a pattern.</li>
+        
+        <li>Specification files path - Add directory to path search for .lcl 
+        specification files.</li>
+        
+        <li>Options file - Load options from a file. If this flag is used from 
+        the command line, the default ~/.splintrc file is not loaded. 
+        This flag may be used in an options file to load in another 
+        options file. </li>
+        
+        <li>Add directory to path - Add directory to path searched for C include files. 
+        Note there is no space after the I, to be consistent with C preprocessor 
+        flags.</li>
+        
+        <li>Show scan - Show file names are they are processed.</li>
+        
+        <li>Show stats - Display number of lines processed and checking time.</li>
+        
+        <li>Show summary - Show a summary of all errors reported and suppressed. 
+        Counts of suppressed errors are not necessarily correct since turning 
+        a flag off may prevent some checking from being done to save computation, 
+        and errors that are not reported may propagate differently from when 
+        they are reported.</li>
+        
+        <li>Additional commands - Additional general commands for Splint. 
+        User-defined commands, to be written as if if they were typed in 
+        the console.</li>
+        
+        <li>Working directory - Desired working directory, leaving this blank uses 
+        the default workspace.</li>
+        
+      </ul>
+      
+      </p>
+
+      <h2 class="help">Additional Information</h2>
+      <ul>
+          <li> <a href="http://www.splint.org">Splint's home page</a> </li>
+      </ul>
+      
+    </div>
+  </componentContainer>
+ </helpDefinition>
+

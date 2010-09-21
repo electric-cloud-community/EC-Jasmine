@@ -1,0 +1,46 @@
+<step>
+    <project>/plugins/EC-Jasmine/project</project>
+    <procedure>runJasmine</procedure>
+    <category>Test Tools</category>
+    <editor>
+    
+        <label>Invoke Jasmine</label>
+        <description>Executes Jasmine Ruby gem</description>
+
+        <formElement>
+            <type>entry</type>
+            <label>Rakefile location:</label>
+            <property>rakefile</property>
+            <required>0</required>
+            <documentation>Absolute path of the rakefile needed to execute the Jasmine tests</documentation>
+        </formElement>
+        
+        <formElement>
+            <type>select</type>
+            <label>Type of execution</label>
+            <property>type</property>
+            <required>1</required>
+            <documentation>Mode of executing Jasmine, Selenium-mode or default</documentation>
+            <option><name>Default</name><value>default</value></option>
+            <option><name>Selenium</name><value>selenium</value></option>
+        </formElement>
+        
+        <formElement>
+            <type>textarea</type>
+            <label>Additional Rake Commands:</label>
+            <property>additionalcommands</property>
+            <required>0</required>
+            <documentation>Additional commands to be entered for Rake on Jasmine task execution</documentation>
+        </formElement>
+
+         <formElement>
+            <type>entry</type>
+            <label>Working directory:</label>
+            <property>workingdir</property>
+            <required>0</required>
+            <value></value>
+            <documentation>Working directory</documentation>
+        </formElement>
+
+    </editor>
+</step>

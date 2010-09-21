@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exportedData version="39" buildLabel="" buildVersion="3.5.0.0">
+  <exportPath>/projects/@PLUGIN_KEY@-@PLUGIN_VERSION@</exportPath>
+  <project>
+    <projectName>@PLUGIN_KEY@-@PLUGIN_VERSION@</projectName>
+    <propertySheet>
+
+      <property>
+        <propertyName>scripts</propertyName>
+        <description></description>
+        <propertySheet>
+          <property>
+            <propertyName>jasmineDriver</propertyName>
+            <description></description>
+            <expandable>1</expandable>
+            <value></value>
+          </property>
+        </propertySheet>
+      </property>
+      
+      <property>
+        <propertyName>jasmine_forms</propertyName>
+        <description></description>
+        <propertySheet>
+          <property>
+            <propertyName>wizardCustomEditor</propertyName>
+            <description></description>
+            <expandable>1</expandable>
+            <value></value>
+          </property>
+        </propertySheet>
+      </property>
+      
+      <property>
+        <propertyName>ec_setup</propertyName>
+        <value></value>
+        <expandable>0</expandable>
+      </property>
+      
+      <property>
+        <propertyName>postp_matchers</propertyName>
+        <value></value>
+        <expandable>0</expandable>
+      </property>
+      
+	</propertySheet>
+
+    <procedure>
+      <procedureName>runJasmine</procedureName>
+      <description>runs jasmine</description>
+      <jobNameTemplate></jobNameTemplate>
+      <resourceName></resourceName>
+      <workspaceName></workspaceName>
+      <projectName>EC-Jasmine</projectName>
+      <propertySheet>
+        <property>
+          <propertyName>ec_customEditorData</propertyName>
+          <propertySheet>
+            <property>
+              <propertyName>parameters</propertyName>
+              
+              <propertySheet>
+              
+              	<property>
+                  <propertyName>workingdir</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>rakefile</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>type</propertyName>
+                  <propertySheet>
+                    
+                    <property>
+                      <propertyName>options</propertyName>
+                      <propertySheet>
+                        <property>
+                          <propertyName>option1</propertyName>
+                          <propertySheet>
+                            <property>
+                              <propertyName>text</propertyName>
+                              <expandable>1</expandable>
+                              <value>Default</value>
+                            </property>
+                            <property>
+                              <propertyName>value</propertyName>
+                              <expandable>1</expandable>
+                              <value>default</value>
+                            </property>
+                          </propertySheet>
+                        </property>
+                        
+                        <property>
+                          <propertyName>option2</propertyName>
+                          
+                          <propertySheet>
+                            
+                            <property>
+                              <propertyName>text</propertyName>                              
+                              <value>Selenium</value>
+                            </property>
+                            
+                            <property>
+                              <propertyName>value</propertyName>
+                              <owner>admin</owner>
+                              <value>selenium</value>
+                            </property>
+                            
+                          </propertySheet>
+                        </property>
+                       
+                       <property>
+                          <propertyName>optionCount</propertyName>
+                          <expandable>1</expandable>
+                          <value>2</value>
+                        </property>
+                        
+                        <property>
+                          <propertyName>type</propertyName>
+                          <expandable>1</expandable>
+                          <value>list</value>
+                        </property> 
+                        
+                        </propertySheet>
+                        </property>
+                    </propertySheet>
+                </property>
+                
+                <property>
+                  <propertyName>additionalcommands</propertyName>
+                  <propertySheet>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
+                
+              </propertySheet>
+              
+            </property>
+          </propertySheet>
+        </property>
+      </propertySheet>
+      
+      <formalParameter>
+        <formalParameterName>workingdir</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Working directory</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+
+      <formalParameter>
+        <formalParameterName>type</formalParameterName>
+        <description>Mode of execution</description>
+        <required>1</required>
+        <type>select</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>rakefile</formalParameterName>
+        <description>Rakefile location</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+      
+      <formalParameter>
+        <formalParameterName>additionalcommands</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Additional parameters to be entered for Rake on Jasmine task</description>
+        <required>0</required>
+        <type>textarea</type>
+      </formalParameter>
+      
+      <step>
+        <stepName>createCommandLine</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[/projects/$[/plugins/EC-Jasmine/projectName]/scripts/jasmineDriver];</command>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusive>0</exclusive>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp</postProcessor>
+        <releaseExclusive>0</releaseExclusive>
+        <resourceName>local</resourceName>
+        <retries>0</retries>
+        <shell>ec-perl</shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <workingDirectory></workingDirectory>
+        <workspaceName></workspaceName>
+        <procedureName>runJasmine</procedureName>
+        <projectName>EC-Jasmine</projectName>
+        <propertySheet>
+          <property>
+            <propertyName>ec_customEditorData</propertyName>
+            <propertySheet>
+              <property>
+                <propertyName>formType</propertyName>
+                <expandable>1</expandable>
+                <value>command</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+      </step>
+      
+      <step>
+        <stepName>runCommandLine</stepName>
+        <alwaysRun>0</alwaysRun>
+        <broadcast>0</broadcast>
+        <command>$[/myCall/commandLine]</command>
+        <condition></condition>
+        <description></description>
+        <errorHandling>failProcedure</errorHandling>
+        <exclusive>0</exclusive>
+        <logFileName></logFileName>
+        <parallel>0</parallel>
+        <postProcessor>postp</postProcessor>
+        <releaseExclusive>0</releaseExclusive>
+        <resourceName>local</resourceName>
+        <retries>0</retries>
+        <shell></shell>
+        <timeLimit></timeLimit>
+        <timeLimitUnits>minutes</timeLimitUnits>
+        <workingDirectory>$[/myCall/workingdir]</workingDirectory>
+        <workspaceName>default</workspaceName>
+        <procedureName>runSelenium</procedureName>
+        <projectName>EC-Jasmine</projectName>
+        <propertySheet>
+          <property>
+            <propertyName>ec_customEditorData</propertyName>
+            <propertySheet>
+              <property>
+                <propertyName>formType</propertyName>
+                <expandable>1</expandable>
+                <value>command</value>
+              </property>
+            </propertySheet>
+          </property>
+        </propertySheet>
+      </step>
+    </procedure>
+  </project>
+</exportedData>

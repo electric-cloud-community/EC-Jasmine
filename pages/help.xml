@@ -1,74 +1,55 @@
   <helpDefinition>
-  <title>Splint Help</title>
+  <title>Jasmine Help</title>
   <componentContainer>
-    <LINK REL="StyleSheet" HREF="../../plugins/EC-Splint/pluginhelp.css" TYPE="text/css" MEDIA="screen"/>
+    <LINK REL="StyleSheet" HREF="../../plugins/EC-Jasmine/pluginhelp.css" TYPE="text/css" MEDIA="screen"/>
     <div class="help" >
-      <h1 class="help">Splint</h1>
+      <h1 class="help">Jasmine</h1>
       <h2 class="help">Overview</h2>
       <p class="help">
-Splint is a tool that does static analysis on C programs for security 
-vulnerabilities and coding mistakes. With minimal effort, Splint can be 
-used as a better lint. If additional effort is invested adding annotations 
-to programs, Splint can perform stronger checking than can be done by any 
-standard lint. Initially, it is only available for Linux, but an older version 
-was developed specifically for Windows.</p>
+Jasmine is a small Javascript testing DOM-less framework. It is a successor of 
+JSUnit and it can be downloaded and published on a server to execute test runners. 
+Also, it can be executed through its ruby gem, which makes it a lot easier to use for 
+continuous integration.
+<br/>
+It was created by authors of jsUnit and Screw.Unit. Using a different approach than JSpec, 
+Jasmine uses Java Script syntax to the maximum instead of trying to mimic Ruby.</p>
 
 
       <h2 class="help">Configuration</h2>
     
-    <p class="help">You do not need to configure the plugin before using it.</p>
+    <p class="help">You do not need to configure the plugin before using it. 
+    However, you must install the Ruby environment as well as the Jasmine gem and its dependencies (rake, rack, win32console, rspec, selenium-rc).</p>
 
      <h2 class="help">Using the Plugin</h2>
-
+     
       <p class="help">
-      When creating a procedure, in the Steps tab, click the <B>Add Step</B> button and select 
-      <b>splint</b> from the <b>Code Analysis Tools</b> category. Complete the following parameters: 
+      When creating a procedure, do the following:
+      
+      <ol>
+      <li>Click the <b>Add Step</b> on the <b>Steps</b> panel.</li>
+      <li>Select <b>jasmine</b> from the <b>Test Tools</b> category.</li> 
+      <li>Complete the appropriate fields. The following fields are available: 
       <ul>
           
-        <li>Splint installation path - Path to the splint installation path, 
-        default value is splint, if Windows version is used, you should point to the 
-        absolute path of splint.exe</li>
+        <li>Rakefile location - Absolute path to the rakefile that has the Jasmine tasks to be executed.</li>
         
-        <li>Target to analyze - Path of the target to analyze. 
-        It can be a file or a pattern.</li>
+        <li>Type of execution - Selects the target that will be executed for the Rake invocation, either <b>jasmine</b> or <b>jasmine:ci</b> for the default mode and Selenium respectively.</li>
         
-        <li>Specification files path - Add directory to path search for .lcl 
-        specification files.</li>
+        <li>Additional Rake Commands - Additional commands to be executed for Rake.</li>
         
-        <li>Options file - Load options from a file. If this flag is used from 
-        the command line, the default ~/.splintrc file is not loaded. 
-        This flag may be used in an options file to load in another 
-        options file. </li>
-        
-        <li>Add directory to path - Add directory to path searched for C include files. 
-        Note there is no space after the I, to be consistent with C preprocessor 
-        flags.</li>
-        
-        <li>Show scan - Show file names are they are processed.</li>
-        
-        <li>Show stats - Display number of lines processed and checking time.</li>
-        
-        <li>Show summary - Show a summary of all errors reported and suppressed. 
-        Counts of suppressed errors are not necessarily correct since turning 
-        a flag off may prevent some checking from being done to save computation, 
-        and errors that are not reported may propagate differently from when 
-        they are reported.</li>
-        
-        <li>Additional commands - Additional general commands for Splint. 
-        User-defined commands, to be written as if if they were typed in 
-        the console.</li>
-        
-        <li>Working directory - Desired working directory, leaving this blank uses 
+        <li>Working directory - Desired working directory. Leave blank to use 
         the default workspace.</li>
         
       </ul>
-      
+      </li>
+      </ol>
       </p>
 
       <h2 class="help">Additional Information</h2>
       <ul>
-          <li> <a href="http://www.splint.org">Splint's home page</a> </li>
+          <li> <a href="http://pivotal.github.com/jasmine/">Jasmine</a> </li>
       </ul>
+      
       
     </div>
   </componentContainer>

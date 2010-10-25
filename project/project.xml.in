@@ -43,6 +43,13 @@
         <expandable>0</expandable>
       </property>
       
+      <property>
+        <propertyName>ec_visibility</propertyName>
+        <description></description>
+        <expandable>1</expandable>
+        <value>pickListOnly</value>
+      </property>        
+      
 	</propertySheet>
 
     <procedure>

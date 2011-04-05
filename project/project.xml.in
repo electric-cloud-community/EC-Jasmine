@@ -210,7 +210,7 @@
         <parallel>0</parallel>
         <postProcessor>postp</postProcessor>
         <releaseExclusive>0</releaseExclusive>
-        <resourceName>local</resourceName>
+        <resourceName></resourceName>
         <retries>0</retries>
         <shell>ec-perl</shell>
         <timeLimit></timeLimit>
@@ -244,15 +244,15 @@
         <exclusive>0</exclusive>
         <logFileName></logFileName>
         <parallel>0</parallel>
-        <postProcessor>postp</postProcessor>
+        <postProcessor>postp --loadProperty /myProject/postp_matchers</postProcessor>
         <releaseExclusive>0</releaseExclusive>
-        <resourceName>local</resourceName>
+        <resourceName></resourceName>
         <retries>0</retries>
         <shell></shell>
         <timeLimit></timeLimit>
         <timeLimitUnits>minutes</timeLimitUnits>
         <workingDirectory>$[/myCall/workingdir]</workingDirectory>
-        <workspaceName>default</workspaceName>
+        <workspaceName></workspaceName>
         <procedureName>runSelenium</procedureName>
         <projectName>EC-Jasmine</projectName>
         <propertySheet>

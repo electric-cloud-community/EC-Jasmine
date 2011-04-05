@@ -3,6 +3,8 @@
 SRCTOP=..
 include $(SRCTOP)/build/vars.mak
 
+PLUGIN_PATCH_LEVEL=1.0.1
+
 build: package
 unittest:
 systemtest: start-selenium test-setup test-run stop-selenium

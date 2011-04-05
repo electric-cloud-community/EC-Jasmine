@@ -1,26 +1,65 @@
+# -------------------------------------------------------------------------
+# Package
+#    jasmineDriver.pl
+#
+# Dependencies
+#    None
+#
+# Purpose
+#    Use Jasmine tool features on Electric Commander
+#
+# Plugin Version
+#    1.0.0
+#
+# Date
+#    10/25/2010 
+#
+# Engineer
+#    Alonso Blanco
+#
+# Copyright (c) 2011 Electric Cloud, Inc.
+# All rights reserved
+# -------------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------------
+# Includes
+# -------------------------------------------------------------------------
 use warnings;
 use strict; 
 $|=1;
 
 use ElectricCommander;
 
+# -------------------------------------------------------------------------
+# Constants
+# -------------------------------------------------------------------------
+   
 use constant SELENIUM_MODE => 'selenium';
 use constant DEFAULT_MODE => 'default';
+
+# -------------------------------------------------------------------------
+# Variables
+# -------------------------------------------------------------------------
 
 $::gRakefile = "$[rakefile]";
 $::gType = "$[type]";
 $::gAdditionalCommands = q($[additionalcommands]);
 $::gWorkingDir = "$[workingdir]";
 
+# -------------------------------------------------------------------------
+# Main functions
+# -------------------------------------------------------------------------
+
 ########################################################################
 # main - contains the whole process to be done by the plugin, it builds 
 #        the command line, sets the properties and the working directory
 #
 # Arguments:
-#   -none
+#   none
 #
 # Returns:
-#   -nothing
+#   none
 #
 ########################################################################
 sub main() {
@@ -75,8 +114,8 @@ sub main() {
 # of the program to be executed.
 #
 # Arguments:
-#   -arr: array containing the command name and the arguments entered by 
-#         the user in the UI
+#   -arr: array containing the command name (must be the first element) 
+#         and the arguments entered by the user in the UI
 #
 # Returns:
 #   -the command line to be executed by the plugin
@@ -108,7 +147,7 @@ sub createCommandLine($) {
 #              to be written into the Electric Commander
 #
 # Returns:
-#   -nothing
+#   -none
 #
 ########################################################################
 sub setProperties($) {
@@ -133,7 +172,7 @@ sub setProperties($) {
 #   -none
 #
 # Returns:
-#   -nothing
+#   -none
 #
 ########################################################################
 sub registerReports(){

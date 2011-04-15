@@ -6,82 +6,54 @@
         <LINK REL="StyleSheet" HREF="../../plugins/EC-Jasmine/pluginhelp.css" TYPE="text/css" MEDIA="screen"/>
         <div class="help" >
             <h1 class="help">
-                Jasmine
-            </h1>
-            <h2 class="help">
-                Overview
-            </h2>
-            <p class="help">
-                Jasmine is a small JavaScript testing DOM-less framework. It is a successor of
-                JsUnit and it can be downloaded and published on a server to execute test runners.
-                Also, it can be executed through its Ruby gem, which makes it easier to use for
-                continuous integration.
-                <br/>
-                It was created by authors of JsUnit and Screw.Unit. Using a different approach than JSpec,
-                Jasmine uses JavaScript syntax to the maximum instead of trying to mimic Ruby.
-            </p>
-            <h2 class="help">
-                Configuration
-            </h2>
-            <p class="help">
-                You do not need to configure the plugin before using it.
-                However, you must install the Ruby environment as well as the Jasmine gem and its dependencies (rake, rack, win32console, rspec, selenium-rc).
-            </p>
-            <h2 class="help">
-                Using the Plugin
-            </h2>
-            <p class="help">
-                When creating a procedure, do the following:
-                <ol>
-                    <li>Click <b>Add Step</b> on the <b>Steps</b> panel.</li>
-                    <li>Select <b>jasmine</b> from the <b>Test Tools</b> category.</li>
-                    <li>Complete the appropriate fields. The following fields are available:
-                        <ul>
-                            <li>Rakefile location - Absolute path to the rakefile that has the Jasmine tasks to be executed.</li>
-                            <li>Type of execution - Selects the target that will be executed for the Rake invocation, either <b>jasmine</b> or <b>jasmine:ci</b> for the default mode and Selenium, respectively.</li>
-                            <li>Additional Rake Commands - Additional commands to be executed for Rake.</li>
-                            <li>Working directory - Desired working directory. Leave blank to use the default workspace.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </p>
-            <h2 class="help">
-                Example
-            </h2>
-            <p class="help">
-                To use the EC-Jasmine plugin, follow these steps:
-            </p>
-            <ol>
-                <li>Create a new procedure and assign a name:</li>
-                <br>
-                </br>
-                <img src="../../plugins/EC-Jasmine/img/p1.png"/>
-                <li>Add a new step and select <b>jasmine</b> from the <b>Test Tools</b> category.</li>
-                <br>
-                </br>
-                <img src="../../plugins/EC-Jasmine/img/p2.png"/>
-                <li>Complete the appropriate fields.</li>
-                <br>
-                </br>
-                <img src="../../plugins/EC-Jasmine/img/p3.png"/>
-                <br>
-                </br>
-                <p class="help">
-                    This is the resulting command:
-                </p>
-                <p class="help">
-                    <i>rake -f "Rakefile" jasmine</i>
-                </p>
-                <li>If there are no errors in the Jasmine command, Commander displays the results with basic Jasmine information:</li>
-                <br>
-                </br>
-                <img src="../../plugins/EC-Jasmine/img/p4.png"/>
-            </ol>
-            <h2 class="help">
-                Additional Information
-            </h2>
-            <ul>
-                <li><a href="http://pivotal.github.com/jasmine/">Jasmine</a></li>
+	                    Jasmine
+	                </h1>
+	                <h2 class="help">
+	                    Overview
+	                </h2>
+	                <p class="help">
+	                    Jasmine is a small JavaScript testing DOM-less framework. It is a successor of
+	                    JsUnit and it can be downloaded and published on a server to execute test runners.
+	                    Also, it can be executed through its Ruby gem, which makes it easier to use for
+	                    continuous integration.
+	                    </p>
+	                    <p class="help">
+	                    <b>Note:</b> You must install the Ruby environment as well as the Jasmine gem and its dependencies (rake, rack, win32console, rspec, selenium-rc).
+	                    </p>
+	                    <p class="help">
+			                <b>Supported tool version</b><br>
+			                This plugin was developed and tested with Jasmine version 1.0.1.
+			                </p>
+	                <h2 class="help">
+	                    Configuration
+	                </h2>
+	                <p class="help">
+	                    You do not need to configure the plugin before using it.
+	                </p>
+	                <h2 class="help">
+	                    Using the Plugin
+	                </h2>
+	                <p class="help">
+	    			See the <a href="/commander/link/showHelp?page=plugins&amp;section=using">Commander online help system</a> for details about how to use this plugin within a procedure.
+	    			</p>
+	    			<p class="help">
+	    			When you provide information for this plugin, fill-in the fields as follows:
+	    			</p>
+	                            <ul>
+	                                <li><b>Rakefile location</b> - Provide the absolute path to the rakefile that contains the Jasmine tasks to be executed.</li>
+	                                <li><b>Type of execution</b> - Select the target to execute for the Rake invocation, either jasmine or jasmine:ci for default and Selenium modes, respectively.</li>
+	                                <li><b>Additional Rake Commands</b> - Provide any additional commands to execute for Rake.</li>
+	                                <li><b>Working directory</b> - Indicate the desired working directory. Leave blank to use the default workspace.</li>
+	                            </ul>
+	                        </li>
+	                    </ol>
+	                <p></p>
+	    
+	                <h2 class="help">
+	                    Additional Information
+	                </h2>
+	                <ul>
+	                    <li><a href="http://pivotal.github.com/jasmine/">Jasmine</a></li>
             </ul>
         </div>
     </componentContainer>

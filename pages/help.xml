@@ -5,7 +5,7 @@
     <componentContainer>
         <LINK REL="StyleSheet" HREF="../../plugins/EC-Jasmine/pluginhelp.css" TYPE="text/css" MEDIA="screen"/>
         <div class="help" >
-            <h1 class="help">
+            <h1 class="help"> 
 	                    Jasmine
 	                </h1>
 	                <h2 class="help">
@@ -21,7 +21,7 @@
 	                    <b>Note:</b> You must install the Ruby environment as well as the Jasmine gem and its dependencies (rake, rack, win32console, rspec, selenium-rc).
 	                    </p>
 	                    <p class="help">
-			                <b>Supported tool version</b><br>
+			                <b>Supported tool version</b><br/>
 			                This plugin was developed and tested with Jasmine version 1.0.1.
 			                </p>
 	                <h2 class="help">
@@ -45,8 +45,7 @@
 	                                <li><b>Additional Rake Commands</b> - Provide any additional commands to execute for Rake.</li>
 	                                <li><b>Working directory</b> - Indicate the desired working directory. Leave blank to use the default workspace.</li>
 	                            </ul>
-	                        </li>
-	                    </ol>
+        	
 	                <p></p>
 	    
 	                <h2 class="help">

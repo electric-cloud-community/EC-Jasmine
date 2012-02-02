@@ -7,7 +7,7 @@ PLUGIN_PATCH_LEVEL=1.0.2
 
 build: package
 unittest:
-systemtest: start-selenium test-setup test-run stop-selenium
+systemtest: test-setup test-run
 jasminetest:
 	$(MAKE) NTESTFILES="systemtest/jasmine.ntest" RUNFLOGTESTS=1 test-setup test-run
 

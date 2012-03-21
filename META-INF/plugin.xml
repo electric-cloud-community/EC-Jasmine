@@ -4,7 +4,7 @@
     <version>@PLUGIN_VERSION@</version>
     <label>@PLUGIN_KEY@</label>
     <description>Integrates Jasmine test framework into Electric Commander</description>
-    <category>Step</category>
+    <category>Test</category>
     <author>Electric Cloud</author>
     <authorUrl>http://www.electric-cloud.com/support</authorUrl>
     <help>help.xml</help>

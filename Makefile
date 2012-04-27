@@ -3,7 +3,7 @@
 SRCTOP=..
 include $(SRCTOP)/build/vars.mak
 
-PLUGIN_PATCH_LEVEL=1.0.2
+PLUGIN_PATCH_LEVEL=1.0.3
 
 build: package
 unittest:

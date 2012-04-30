@@ -2,6 +2,7 @@
     <project>/plugins/EC-Jasmine/project</project>
     <procedure>runJasmine</procedure>
     <category>Test Tools</category>
+	<help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#runJasmine</help>
     <editor>
     
         <label>Invoke Jasmine</label>

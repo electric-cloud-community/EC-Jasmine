@@ -7,7 +7,7 @@
     <category>Test</category>
     <author>Electric Cloud</author>
     <authorUrl>http://www.electric-cloud.com/support</authorUrl>
-    <help>help.xml</help>
+    <help>EC-Jasmine_help.xml</help>
     <commander-version min="3.6"/>
     <components>
         <component name="configure">

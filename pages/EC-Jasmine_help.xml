@@ -80,7 +80,12 @@
         </div>   
         <h1>Release Notes</h1>
        
-        <h2>@PLUGIN_KEY@-@PLUGIN_VERSION@</h2>
+         <h2>@PLUGIN_KEY@-@PLUGIN_VERSION@</h2>
+            <ul>
+                <li>Plugin converted into the new maven format.</li>
+            </ul>
+		
+		<h2>1.0.3</h2>
             <ul>
                 <li>4.1 help page format ready.</li>
             </ul>

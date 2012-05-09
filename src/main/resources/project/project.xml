@@ -19,19 +19,6 @@
       </property>
       
       <property>
-        <propertyName>jasmine_forms</propertyName>
-        <description></description>
-        <propertySheet>
-          <property>
-            <propertyName>wizardCustomEditor</propertyName>
-            <description></description>
-            <expandable>1</expandable>
-            <value></value>
-          </property>
-        </propertySheet>
-      </property>
-      
-      <property>
         <propertyName>ec_setup</propertyName>
         <value></value>
         <expandable>0</expandable>
@@ -165,38 +152,46 @@
             </property>
           </propertySheet>
         </property>
+		
+		<property>
+			<propertyName>ec_parameterForm</propertyName>
+			<description></description>
+			<expandable>0</expandable>
+			<value></value>
+		</property>
+		
       </propertySheet>
-      
-      <formalParameter>
-        <formalParameterName>workingdir</formalParameterName>
-        <defaultValue></defaultValue>
-        <description>Working directory</description>
-        <required>0</required>
+	  
+	  <formalParameter>
+        <formalParameterName>rakefile</formalParameterName>
+        <description>Provide the absolute path to the rakefile that contains the Jasmine tasks to be executed.</description>
+        <required>1</required>
         <type>entry</type>
       </formalParameter>
-
-      <formalParameter>
+	  
+	  <formalParameter>
         <formalParameterName>type</formalParameterName>
-        <description>Mode of execution</description>
+        <description>Select the target to execute for the Rake invocation, either jasmine or jasmine:ci for default and Selenium modes, respectively.</description>
         <required>1</required>
         <type>select</type>
       </formalParameter>
-      
-      <formalParameter>
-        <formalParameterName>rakefile</formalParameterName>
-        <description>Rakefile location</description>
-        <required>0</required>
-        <type>entry</type>
-      </formalParameter>
-      
+
       <formalParameter>
         <formalParameterName>additionalcommands</formalParameterName>
         <defaultValue></defaultValue>
-        <description>Additional parameters to be entered for Rake on Jasmine task</description>
+        <description>Provide any additional commands to to be entered for Rake on the Jasmine task.</description>
         <required>0</required>
         <type>textarea</type>
       </formalParameter>
       
+      <formalParameter>
+        <formalParameterName>workingdir</formalParameterName>
+        <defaultValue></defaultValue>
+        <description>Indicate the desired working directory. Leave blank to use the default workspace.</description>
+        <required>0</required>
+        <type>entry</type>
+      </formalParameter>
+
       <step>
         <stepName>createCommandLine</stepName>
         <alwaysRun>0</alwaysRun>

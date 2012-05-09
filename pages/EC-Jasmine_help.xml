@@ -60,8 +60,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Rakefile location</td>
-                        <td>Provide the absolute path to the rakefile that contains the Jasmine tasks to be executed.</td>
+                        <td class='required'>Rakefile location</td>
+                        <td>Provide the absolute path to the rakefile that contains the Jasmine tasks to be executed. (Required)</td>
                     </tr>
                     <tr>
                         <td class='required'>Type of execution</td>
@@ -69,7 +69,7 @@
                     </tr>
                     <tr>
                         <td>Additional Rake Commands</td>
-                        <td>Provide any additional commands to execute for Rake.</td>
+                        <td>Provide any additional commands to to be entered for Rake on the Jasmine task.</td>
                     </tr>
                     <tr>
                         <td>Working directory</td>
@@ -77,10 +77,33 @@
                     </tr>
                 </tbody>
             </table>
-        </div>   
+			
+			<h2>Parameter form</h2>
+			<img src="../../plugins/@PLUGIN_KEY@/images/Jasmine-1.png" alt=
+			"form" />
+        </div> 
+
+		<h1>Examples and Use Cases</h1>
+		<h2>Parameters Form</h2>
+		<img src="../../plugins/@PLUGIN_KEY@/images/Jasmine-2.png" alt=
+		"screenshot" />
+		<h2>Job Summary</h2>
+		<img src="../../plugins/@PLUGIN_KEY@/images/Jasmine-3.png" alt=
+		"screenshot" />
+		<h2>Job Log File</h2>
+		<img src="../../plugins/@PLUGIN_KEY@/images/Jasmine-4.png" alt=
+		"screenshot" />
+
+		
         <h1>Release Notes</h1>
        
-         <h2>@PLUGIN_KEY@-@PLUGIN_VERSION@</h2>
+         <h2>@PLUGIN_VERSION@</h2>
+            <ul>
+                <li>4.1 XML parameters panels ready.</li>
+				<li>Help page improvements.</li>
+            </ul>
+			
+			<h2>1.0.4</h2>
             <ul>
                 <li>Plugin converted into the new maven format.</li>
             </ul>

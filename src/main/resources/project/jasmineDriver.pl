@@ -42,10 +42,13 @@ use constant DEFAULT_MODE => 'default';
 # Variables
 # -------------------------------------------------------------------------
 
-$::gRakefile = "$[rakefile]";
-$::gType = "$[type]";
-$::gAdditionalCommands = q($[additionalcommands]);
-$::gWorkingDir = "$[workingdir]";
+my $ec = ElectricCommander->new();
+    $ec->abortOnError(0);
+
+$::gRakefile = ($ec->getProperty( "rakefile" ))->findvalue('//value')->string_value;
+$::gType = ($ec->getProperty( "type" ))->findvalue('//value')->string_value;
+$::gAdditionalCommands = ($ec->getProperty( "additionalcommands" ))->findvalue('//value')->string_value;
+$::gWorkingDir = ($ec->getProperty( "workingdir" ))->findvalue('//value')->string_value;
 
 # -------------------------------------------------------------------------
 # Main functions

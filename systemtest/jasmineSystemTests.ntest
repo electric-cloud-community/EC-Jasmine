@@ -99,7 +99,7 @@ ntest "executeJasmineWithAllOptions", {}, sub {
           $status = $xpath->findvalue("//status");
           $outcome = $xpath->findvalue("//outcome");
   
-          assertTrue($jobId && int($jobId) > 0,'valid job id');
+          assertTrue($jobId && $jobId ne "",'valid job id');
           assertEq('completed',$status,"job $jobId complete");
   
           #abort if job did not finish
@@ -149,7 +149,7 @@ ntest "executeJasmineWithRakefile", {}, sub {
           $status = $xpath->findvalue("//status");
           $outcome = $xpath->findvalue("//outcome");
   
-          assertTrue($jobId && int($jobId) > 0,'valid job id');
+          assertTrue($jobId && $jobId ne "",'valid job id');
           assertEq('completed',$status,"job $jobId complete");
   
           #abort if job did not finish
@@ -200,7 +200,7 @@ ntest "executeJasmineWithRakefile", {}, sub {
           $status = $xpath->findvalue("//status");
           $outcome = $xpath->findvalue("//outcome");
   
-          assertTrue($jobId && int($jobId) > 0,'valid job id');
+          assertTrue($jobId && $jobId ne "",'valid job id');
           assertEq('completed',$status,"job $jobId complete");
   
           #abort if job did not finish

@@ -3,7 +3,7 @@
     <key>@PLUGIN_KEY@</key>
     <version>@PLUGIN_VERSION@</version>
     <label>@PLUGIN_KEY@</label>
-    <description>Integrates Jasmine test framework into Electric Commander</description>
+    <description>Integrates Jasmine test framework into ElectricFlow</description>
     <category>Test</category>
     <author>Electric Cloud</author>
     <authorUrl>http://www.electric-cloud.com/support</authorUrl>
